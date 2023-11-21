@@ -1,0 +1,220 @@
+.technologySection {
+    background-image: url('./../../assets/technology/background-technology-desktop.jpg');
+    background-size: cover;
+}
+
+.technologyContentSection {
+    margin-top: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px
+}
+
+.sectionOfTechnology {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainTitleTechnologyPage {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.8em;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 0.2em;
+}
+
+.mainTitleTechnologyPage span {
+    color: darkgray;
+    padding-right: 28px
+}
+
+.mainTextTechnology {
+    width: 650px;
+    height: 303px;
+    display: flex;
+    margin-top: 132px;
+}
+
+.dotsOfTechnologyContainer {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    gap: 30px;
+    padding-left: 0;
+    margin: 0;
+}
+
+.dotTech {
+    width: 80px;
+    height: 80px;
+    color: white;
+    border-radius: 50%;
+    border: 1px darkgray solid;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bellefair', serif;
+    font-size: 3.2em;
+}
+
+.dotTech:hover {
+    border-color: white;
+}
+
+.infoOfTechnology {
+    margin-left: 80px;
+}
+
+.titleTechnology {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.6em;
+    color: #D0D6F9;
+    text-transform: uppercase;
+    word-spacing: 0.27em;
+}
+
+.nameOfTechnology {
+    font-family: 'Bellefair';
+    font-size: 5.6em;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+.textTechnology {
+    font-size: 1.8em;
+    line-height: 1.8em;
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+}
+
+@media screen and (max-width: 1400px) {
+    .technologySection {
+        background-image: url('./../../assets/technology/background-technology-tablet.jpg');
+    }
+
+    .technologyContentSection {
+        width: 100%;
+        margin-top: 112px;
+    }
+
+    .mainTitleTechnologyPage {
+        width: 90%;
+        margin-top: 10px;
+        font-size: 2em;
+    }
+
+    .sectionOfTechnology {
+        flex-direction: column-reverse;
+        margin-top: 60px;
+    }
+
+    .containerOfTechnology {
+        text-align: center;
+    }
+
+    .mainTextTechnology {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .dotsOfTechnologyContainer {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dotTech {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nameOfTechnology {
+        font-size: 4em;
+        margin-top: 20px;
+    }
+
+    .textTechnology {
+        font-size: 1.6em;
+    }
+
+    .infoOfTechnology {
+        margin-left: 0;
+        text-align: center;
+        width: 60%;
+        margin-top: 30px;
+    }
+    .imageRocket {
+        width: 760px;
+        height: 310px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 376px) {
+    .technologySection {
+        background-image: url('./../../assets/technology/background-technology-mobile.jpg');
+        height: 710px;
+    }
+
+    .technologyContentSection {
+        width: 86%;
+        height: 100%;
+        margin-top: 80px;
+    }
+
+    .sectionOfTechnology {
+        margin-top: 15px;
+        width: 98%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .mainTitleTechnologyPage {
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    .dotTech {
+        width: 40px;
+        height: 40px;
+        font-size: 1.6em;
+    }
+
+    .infoOfTechnology {
+        margin-top: 20px;
+        width: 98%;
+    }
+
+    .titleTechnology {
+        font-size: 1.4em;
+    }
+
+    .nameOfTechnology {
+        margin-top: 10px;
+        font-size: 2.4em;
+    }
+
+    .mainTextTechnology {
+        margin-top: 20px;
+    }
+
+    .textTechnology {
+        font-size: 1.5em;
+    }
+
+    .imageRocket {
+        width: 365px;
+        height: 170px;
+        object-position: center;
+    }
+}

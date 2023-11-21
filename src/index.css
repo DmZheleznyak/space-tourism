@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+body {  
+  font-size: 62.5%; /* font-size: 62.5% - now 1em = 10px (default 16px) */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  font-weight: normal;
+}

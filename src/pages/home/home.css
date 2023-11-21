@@ -1,0 +1,151 @@
+.mainSection {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("./../../assets/home/background-home-desktop.jpg");
+    background-size: cover;
+}
+
+.contentSection {
+    margin-top: 387px;
+    width: 77%; 
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeArticle {
+    width: 40%;
+    user-select: none;
+    /* width: 45em; */
+}
+
+.homeArticle .h1 {
+    margin-top: 0.04em;
+    font-size: 15em;
+    font-family: 'Bellefair', serif;
+    color: white;
+}
+
+.homeArticle .h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.8em;
+    word-spacing: 1em;
+    color: #D0D6F9;
+}
+
+.homeArticle p {
+    font-size: 1.8em;
+    line-height: 1.8em;
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+}
+.mainButton {
+    margin-top: 8%;
+    width: 27.4em;
+    height: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mainButton .buttonToExplore {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+    color: #0B0D17;
+    font-size: 3.2em;
+    font-family: 'Bellefair', serif;
+    line-height: 8.65em;
+    transition: all 0.7s ease-out;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 1400px) {
+    .mainSection {
+        background-image: url('./../../assets/home/background-home-tablet.jpg');
+        height: 1024px;
+    }
+
+    .contentSection {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 202px;
+        height: 20%;
+    }
+
+    .homeArticle {
+        width: 80%;
+        text-align: center;
+    }
+
+    .homeArticle .h1 {
+        margin-top: 20px;
+    }
+
+    .homeArticle .h5 {
+        font-size: 2em;
+    }
+
+    .mainButton {
+        width: 24.2em;
+        margin-top: 16%;
+    }
+
+    .mainButton .buttonToExplore {
+        line-height: 7.65em;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .homeArticle .h1 {
+        font-size: 11em;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 376px) {
+    .mainSection {
+        background-image: url('./../../assets/home/background-home-mobile.jpg');
+        height: 100vh;
+    }
+
+    .contentSection {
+        margin-top: 112px;
+        width: 86%;
+    }
+
+    .homeArticle {
+        width: 98%;
+    }
+
+    .homeArticle .h5 {
+        font-size: 1.6em;
+    }
+
+    .homeArticle .h1 {
+        font-size: 8em;
+    }
+
+    .homeArticle p {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    .mainButton {
+        margin-top: 10%;
+        width: 15em;
+    }
+
+    .mainButton .buttonToExplore {
+        font-size: 2em;
+    }
+}

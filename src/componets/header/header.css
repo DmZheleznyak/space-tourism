@@ -1,0 +1,232 @@
+.header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 96px;
+    margin-top: 4em;
+}
+
+.headerContainer {
+    float: right;
+    width: 93%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Logo */
+
+.logoContainer {
+    width: 4.8em;
+    height: 4.8em;
+    margin-top: 24px;
+    background-image: url('./../../assets/shared/logo.svg');
+    background-size: cover;
+}
+
+/* Middle dekstop Line */
+
+.lineContainer {
+    width: 40%;
+    height: 100%;
+    margin-left: 4.8%;
+    position: absolute;
+    z-index: 10;
+}
+
+.line {
+    border-top: 1px #979797 solid;
+    margin-top: 48px;
+}
+
+/* Navigation */
+
+.navContainer {
+    width: 57%;
+    height: 100%;
+    padding-left: 10%;
+    backdrop-filter: blur(16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.listOfNavigation {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-right: 25%;
+}
+
+.itemOfListNavigation {
+    width: auto;
+    height: 58%;
+    margin-top: 40px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.itemOfListNavigation.active {
+    border-bottom: 2px white solid;
+}
+
+.itemOfListNavigation:hover {
+    border-bottom: 2px #979797 solid;
+}
+
+.linkOfListNavigation {     
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    word-spacing: .27em;
+}    
+.linkOfListNavigation .itemsNumberOfList {
+    font-weight: bold;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 1400px) {
+    .header {
+        margin-top: 0;
+    }
+
+    .headerContainer {
+        width: 96%;
+    }
+
+    .lineContainer {
+        display: none;
+    }
+
+    .logoContainer {
+        margin-top: 30px;
+    }
+
+    .navContainer {
+        padding-left: 0;
+        width: 62%;
+    }
+
+    .listOfNavigation {
+        width: 100%;
+        justify-content: space-around;
+        margin-right: 8%;
+    }
+
+    .itemOfListNavigation {
+        height: 50%;
+    }
+
+    .linkOfListNavigation {
+        font-size: 1.4em;
+    }
+    .linkOfListNavigation .itemsNumberOfList {
+        display: none;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 376px) {
+    .header {
+        height: 50px;
+    }
+
+    .headerContainer {
+        width: 98%;
+    }
+
+    .logoContainer {
+        margin-top: 20px;
+        width: 4em;
+        height: 4em;
+    }
+}
+
+/* burger menu */
+
+@media screen and (max-width: 376px) {
+    .navContainer {
+        width: 70%;
+        height: 667px;
+        align-items: flex-start;
+        z-index: 5;
+        transition: all 1s ease;
+    }
+
+    .listOfNavigation {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        margin-right: 0;
+        margin-top: 100px;
+    }
+
+    .itemOfListNavigation {
+        height: 20px;
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+
+    .linkOfListNavigation {
+        font-size: 1.6em;
+    }
+
+    .linkOfListNavigation .itemsNumberOfList {
+        display: inline;
+        margin-right: 2px;
+    }
+
+
+
+
+    .navContainer.close {
+        display: none;
+    }
+
+    .navContainer.open {
+        display: block;
+    }
+
+    .buttonMenu {
+        z-index: 7;
+        position: fixed;
+        right: 22px;
+        top: 30px;
+    }
+
+    .hamburgerMenu {
+        width: 28px;
+        height: 32px;
+    }
+
+    .lineOfButtonMenu {
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin-bottom: 5px;
+        background-color: #D0D6F9;
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        opacity: 0.55s ease;
+    }
+
+    .hamburgerMenu.crossmark .lineOfButtonMenu:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 4px);
+    }
+
+    .hamburgerMenu.crossmark .lineOfButtonMenu:nth-child(2) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    .hamburgerMenu.crossmark .lineOfButtonMenu:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -3px);
+    }
+}     
