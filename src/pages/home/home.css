@@ -112,7 +112,7 @@
 
 /* Mobile */
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
     .mainSection {
         background-image: url('./../../assets/home/background-home-mobile.jpg');
         height: 100vh;

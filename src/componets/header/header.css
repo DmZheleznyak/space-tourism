@@ -151,7 +151,7 @@
 
 /* burger menu */
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
     .navContainer {
         width: 70%;
         height: 667px;

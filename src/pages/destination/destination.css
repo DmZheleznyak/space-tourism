@@ -154,7 +154,7 @@
 
 /* Mobile */
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
     .destinationSection {
         background-image: url("./../../assets/destination/background-destination-mobile.jpg");   
         height: 850px;
