@@ -163,7 +163,8 @@
 @media screen and (max-width: 450px) {
     .technologySection {
         background-image: url('./../../assets/technology/background-technology-mobile.jpg');
-        height: 710px;
+        height: 100vh;
+
     }
 
     .technologyContentSection {

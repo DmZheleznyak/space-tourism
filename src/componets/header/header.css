@@ -133,7 +133,7 @@
 
 /* Mobile */
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
     .header {
         height: 50px;
     }
